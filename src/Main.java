@@ -18,5 +18,20 @@ public class Main {
         System.out.println("Saldo Inicial: R$ " + saldo);
         System.out.println("*************************************************");
 
+
+        while (opcao != 4) {
+
+            System.out.println("Operações:\n");
+            System.out.println("1 - Consultar saldos");
+            System.out.println("2 - Receber valor:");
+            System.out.println("3 - Transferir valor");
+            System.out.println("4 - sair\n");
+            System.out.println("Digite a opção desejada:");
+
+            opcao = read.nextInt();
+
+
+
+        }
     }
 }
