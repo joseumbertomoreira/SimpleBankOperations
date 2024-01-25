@@ -29,9 +29,38 @@ public class Main {
             System.out.println("Digite a opção desejada:");
 
             opcao = read.nextInt();
+            double valor = 0;
 
+            switch (opcao) {
+                case 1:
+                    System.out.println("O saldo: " + saldo);
+                    break;
 
+                case 2:
+                    System.out.println("Digite o valor que irá receber");
+                    valor = read.nextDouble();
+                    saldo += valor;
+                    break;
 
+                case 3:
+                    System.out.println("Digite o valor que irá transferir:");
+                    valor = read.nextDouble();
+
+                    if(valor > saldo) {
+                        System.out.println("Você não tem esse valor em conta");
+                    } else {
+                        saldo -= valor;
+                    }
+                    break;
+
+                case 4:
+                    System.out.println("Saindo do sistema");
+                    break;
+
+                default:
+                    System.out.println("Opcao inválida");
+
+            }
         }
     }
 }
